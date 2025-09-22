@@ -1,0 +1,172 @@
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  background-color: #fbe8df; /* fondo suave similar a la imagen */
+}
+
+/* ----------- NAVBAR ----------- */
+.navbar{ background:#fff !important; border-bottom:1px solid #9e0d0d; font-family: Arial, Helvetica, sans-serif; font-size: large; }
+.navbar .nav-link{ color:#000 !important; font-weight:500; }
+.navbar .nav-link:hover{ color:#a75151 !important; }
+
+.btn-delivery {
+  background-color: #8b0000;
+  color: white;
+  border-radius: 24px;
+  padding: 8px 20px;
+  font-weight: 600;
+}
+
+.btn-delivery:hover {
+  background-color: #7a3a3a;
+  color: white;
+}
+
+/* ----------- HERO ----------- */
+.hero .card img{
+    position: relative;
+  height:450px; object-fit:cover; display:block; filter:brightness(0.90);
+}
+
+.hero-overlay { 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.btn-cta {
+  background-color: #b30000;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 25px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-cta:hover {
+  background-color: #e60000;
+  color: white;
+}
+
+/* ----------- FORMULARIO ----------- */
+form {
+    justify-content: center; 
+    width: 100%;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+form label { 
+  font-weight: 600;
+}
+
+form input, form textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+}
+
+form .btn-success {
+  background-color: #28a745;
+}
+
+form .btn-danger {
+  background-color: #dc3545;
+}
+.pedido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center;     /* centra horizontalmente */
+  min-height: 60vh;        /* ocupa al menos 60% de la altura de la ventana */
+  text-align: center;
+}
+.pedido form {
+  width: 100%;
+  max-width: 600px; /* ancho máximo del formulario */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Evitar que los labels hereden text-align: center */
+.pedido form label {
+  display: block;      /* fuerza que cada label ocupe toda la línea */
+  text-align: left;    /* alineación a la izquierda */
+  margin-bottom: 6px;  /* separa del input */
+  font-weight: 600;
+}
+
+/* Mantener inputs centrados y tamaño correcto */
+.pedido form input,
+.pedido form textarea {
+  width: 100%;         /* ocupan todo el ancho del formulario */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin-bottom: 15px; /* espacio entre campos */
+}
+
+
+/* ----------- FOOTER ----------- */
+
+.footer{ background:#a75151; color:#fff; padding:48px 20px; position: relative; }
+.footer h5{ font-weight:700; margin-bottom:10px; }
+.footer p{ color:#fff; }
+
+.btn-footer{ background:#8b0000; color: #fff; border:none; padding:8px 16px; border-radius:24px; font-weight:700; }
+.btn-footer:hover { background: #fff; color: #a75151; }
+
+.social-btn {
+  position: absolute;
+  bottom: 80px;  /* separación desde abajo */
+  right: 500px;   /* separación desde la derecha */
+}
+
+.social-btn img {
+  width: 65px;       /* tamaño más pequeño */
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.social-btn img:hover {
+  transform: scale(1.2);
+}
+
+/* ----------- BOTONES FORMULARIO AL LADO ----------- */
+form .d-flex.gap-2 {
+  justify-content: flex-start;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  form {
+    margin: 1rem;
+  }
+}

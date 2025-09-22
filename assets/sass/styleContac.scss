@@ -1,0 +1,189 @@
+@import "variables";
+@import "darkmode";
+body {
+  font-family: $font-base;
+  color: $color-text-light;
+  background-color: $color-bg-light;
+  margin: 0;
+}
+
+// =============================
+// NAVBAR
+// =============================
+.navbar {
+  background: $color-text-dark !important;
+  border-bottom: 1px solid $color-border;
+  font-family: $font-alt;
+  font-size: large;
+
+  .nav-link {
+    color: $color-text-light !important;
+    font-weight: 500;
+
+    &:hover {
+      color: $color-accent !important;
+    }
+  }
+}
+
+// =============================
+// BOTONES
+// =============================
+.btn-delivery {
+  background: $color-strong;
+  color: $color-text-dark;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-weight: 700;
+
+
+  &:hover {
+    background-color: $color-accent-hover;
+    color: $color-text-dark;
+  }
+}
+
+.btn-footer {
+  background: $color-strong;
+  color: $color-text-dark;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-weight: 700;
+
+  &:hover {
+    background: $color-text-dark;
+    color: $color-accent;
+  }
+}
+
+// =============================
+// HERO
+// =============================
+.hero {
+  img {
+    height: $hero-height;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    background: rgba(0,0,0,0.4);
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-text-dark;
+    padding-bottom: 8px;
+  }
+}
+
+// =============================
+// SECCIÓN HABLEMOS
+// =============================
+.hablemos {
+  text-align: center;
+  padding: 50px 20px 20px;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: $color-text-light;
+  }
+
+  p {
+    color: $color-text;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-icon {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 15px;
+    display: block;
+  }
+}
+
+// =============================
+// CARDS CONTACTO
+// =============================
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: $color-bg-light;
+  border-radius: $card-radius;
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    h5 {
+      font-weight: 600;
+      color: $color-strong;
+      margin: 0 0 5px 0;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: $border-buttom;
+      line-height: 1.4;
+    }
+  }
+}
+
+// =============================
+// FOOTER
+// =============================
+.footer {
+  background: $color-accent;
+  color: $color-text-dark;
+  padding: 48px 20px;
+  position: relative;
+
+  h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $color-text-dark;
+  }
+
+  .social-btn {
+    position: absolute;
+    bottom: 80px;
+    right: 500px;
+
+    img {
+      width: 65px;
+      height: 50px;
+      border-radius: 50%;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

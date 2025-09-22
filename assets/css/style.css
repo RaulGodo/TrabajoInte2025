@@ -1,0 +1,125 @@
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background: #ffebdd;
+  color: #000;
+  margin:0;
+}
+
+/* NAV */
+.navbar{ background:#fff !important; border-bottom:1px solid #9e0d0d; font-family: Arial, Helvetica, sans-serif; font-size: large; }
+.navbar .nav-link{ color:#000 !important; font-weight:500; }
+.navbar .nav-link:hover{ color:#a75151 !important; }
+
+/* Botones personalizados */
+.btn-delivery{ background:#a75151; color:#fff; border:none; padding:8px 16px; border-radius:6px; font-weight:700; }
+.btn-delivery:hover{ background:#7a3a3a; color: #fff;}
+
+.btn-cta{ background:#a75151; color:#fff; border:none; padding:10px 22px; border-radius:24px; font-weight:700; text-decoration:none; display:inline-block; }
+.btn-cta:hover{ background:#7a3a3a; color: #fff;}
+
+
+/* Botones generales */
+.btn {
+  border-radius: 25px;   
+  padding: 10px 24px;    
+  font-weight: 600;
+  background-color: #8B0000;
+}
+.btn-footer:hover{ background:#f5f5f5; color:#6a2b2b; }
+/* HERO */
+.card.position-relative{ border:0; }
+.card-img-top{ height:450px; object-fit:cover; display:block; filter:brightness(0.65); }
+.hero-overlay{ position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; color:#fff; }
+.hero-title{ font-size:2.4rem; font-weight:700; letter-spacing:2px; text-shadow:2px 2px 8px rgba(0,0,0,0.55); margin:0; }
+.hero-sub{ margin-top:8px; font-size:1.05rem; text-shadow:1px 1px 6px rgba(0,0,0,0.45); }
+
+
+.info {
+  font-size: 1.25rem; /* equivale a 20px aprox */
+}
+.info a img {
+  width: 64px;
+  height: auto;
+}
+
+
+/* SERVICES */
+
+.service-card img {
+  width: 100%;
+  height: auto;      
+  max-height: 250px;      
+  object-fit: cover;    
+  border-radius: 16px;     
+  margin-bottom: 16px;     
+}
+.services-container {
+  display: flex;
+  gap: 20px;         /* espacio entre cards */
+  align-items: stretch; /* todas igual de altas */
+  flex-wrap: wrap;
+}
+.service-card {
+  flex: 1 1 320px;       /* mínimo ancho un poco mayor */
+  display: flex;
+  flex-direction: column;
+}
+.service-card .service-desc {
+   background: #ffebdd;
+  border: none;
+  border-radius: 12px;
+  box-shadow: none;
+  padding: 12px;
+  flex: 1;           /* todas ocupan el mismo ancho */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* centra imagen y textos */
+  text-align: center;   /* centra el texto */
+  justify-content: space-between;
+}
+
+
+
+/* FOOTER */
+.footer{ background:#a75151; color:#fff; padding:48px 20px; position: relative; }
+.footer h5{ font-weight:700; margin-bottom:10px; }
+.footer p{ color:#fff; }
+
+.btn-footer{ background:#8B0000; color:#fff; border:none; padding:8px 16px; border-radius:24px; font-weight:700; text-decoration:none; display:inline-block; }
+
+.social-btn {
+  position: absolute;
+  bottom: 80px;  /* separación desde abajo */
+  right: 500px;   /* separación desde la derecha */
+}
+
+.social-btn img {
+  width: 65px;       /* tamaño más pequeño */
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.social-btn img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media(max-width:720px){
+  .card-img-top{ height:320px; }
+  .hero-title{ font-size:1.6rem; }
+  .thumb{ width:72px; height:72px; }
+      .services-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .service-card {
+    width: 100%;
+  }
+  .service-card img {
+  
+    max-height: 300px;  /* opcional, más altura para móvil */
+  }
+
+}

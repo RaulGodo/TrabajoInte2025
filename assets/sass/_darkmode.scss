@@ -1,0 +1,110 @@
+//MODO CLARO//
+body{
+    background-color: $color-bg-light;
+    color: $color-text-light;
+.navbar {
+  background: $color-bg-form !important;
+  .nav-link { color: $color-text-light !important;
+    &:hover {
+        color: $color-accent;
+
+    }
+ }
+}
+.btn-toggle {
+  background: none;         
+  border: none;             
+  box-shadow: none;         
+  cursor: pointer;
+  font-size: 1.2rem;        
+  transition: color 0.3s ease;
+  color: #000;              
+}
+
+.btn-toggle:hover {
+  color: #a75151;           
+}
+
+.footer {
+  background: $color-accent;
+  color: $color-text-dark;
+  p{
+    color: $color-text-dark;
+  }
+}
+}
+
+//MODO OSCURO//
+html body.dark-mode{
+    background-color: $border-buttom !important;
+    color: $color-text-dark !important;
+
+    .service-card .service-desc {
+        background-color: $border-buttom;
+    }
+
+    h1.hero-title{
+        color: $fondo-nav;
+    }
+    .form-label {
+    color: $color-bg;
+     .form-control {
+    background-color: $fondo-nav;
+    color: $color-bg;
+    border: 1px solid $border-buttom;
+
+         &::placeholder {
+    color: #aaa;
+    body.dark-mode .btn {
+  border-color: transparent;
+}
+
+body.dark-mode .btn-success {
+  background-color: #2e7d32;
+}
+
+body.dark-mode .btn-danger {
+  background-color: #c62828;
+}
+
+    }
+    }
+    }
+    .cards{
+        background-color: $border-buttom;
+        .card{
+            background-color: $border-buttom;
+        p {
+            color: $color-text-dark;
+        }
+    }
+    }
+    .hero-title{
+        color: $color-bg-light;
+    }
+  .navbar {
+    background: $fondo-nav !important;
+    border-bottom: 1px solid $border-buttom;
+    .nav-link {
+      color: $color-bg-light !important;
+      &:hover {
+        color: $btn-color-hover !important;
+      }
+    }
+  }
+    body.dark-mode .btn-toggle {
+  color: #eee;              
+}
+
+body.dark-mode .btn-toggle:hover {
+  color: #ccc;              
+}
+  .footer {
+    background: $fondo-nav;
+    color: $color-bg;
+    p {
+      color: $color-bg;
+    }
+  }
+
+}

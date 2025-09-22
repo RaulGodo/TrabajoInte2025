@@ -1,0 +1,199 @@
+@import "variables";
+@import "darkmode";
+
+body {
+  font-family: $font-base;
+  background-color: $color-bg-light;
+  color: $color-text-dark;
+  margin: 0;
+}
+
+// =============================
+// NAVBAR
+// =============================
+.navbar {
+  background: $color-text-dark !important;
+  border-bottom: 1px solid $color-border;
+  font-family: $font-alt;
+  font-size: large;
+
+  .nav-link {
+    color: $color-text-light !important;
+    font-weight: 500;
+
+    &:hover {
+      color: $color-accent !important;
+    }
+  }
+}
+
+// =============================
+// BOTONES
+// =============================
+.btn-delivery {
+  background: $color-accent;
+  color: $color-text-dark;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-weight: 700;
+
+  &:hover {
+    background: $color-accent-hover;
+    color: $color-text-light;
+  }
+}
+
+.btn-cta {
+  background: $color-accent;
+  color: $color-text-light;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    background: $color-accent-hover;
+  }
+}
+
+.btn-footer {
+  background: $color-text-light;
+  color: $color-text-light;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+
+  &:hover {
+    background: lighten($color-text-light, 10%);
+    color: $color-accent-hover;
+  }
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-weight: 600;
+  background-color: $color-strong;
+}
+
+// =============================
+// HERO
+// =============================
+.hero {
+  img {
+    height: $hero-height;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    background: rgba(0,0,0,0.4);
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-text-dark;
+    padding-bottom: 8px;
+  }
+}
+
+// =============================
+// CARDS
+// =============================
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  width: 100%;
+  background-color: $color-bg-light;
+  box-sizing: border-box;
+
+  .card {
+    width: 100%;
+    max-width: 900px;
+    border: none;
+    background-color: $color-bg-light;
+
+    .card-img {
+      width: 100%;
+      max-width: 250px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 25px;
+      margin-bottom: 1rem;
+    }
+
+    .card-title-overlay {
+      font-weight: 700;
+      color: $color-text-dark;
+      background-color: $color-accent-hover;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.5rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: $color-text-light;
+      line-height: 1.5;
+      text-align: justify;
+    }
+  }
+}
+
+// =============================
+// FOOTER
+// =============================
+.footer {
+  background: $color-accent;
+  color: $color-text-dark;
+  padding: 48px 20px;
+  position: relative;
+
+  h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $color-text-dark;
+  }
+
+  .btn-footer {
+    background: $color-strong;
+    color: $color-text-dark;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: 700;
+
+    &:hover {
+      background: $color-accent-hover;
+      color: $color-text-light;
+    }
+  }
+
+  .social-btn {
+    position: absolute;
+    bottom: 80px;
+    right: 500px;
+
+    img {
+      width: 65px;
+      height: 50px;
+      border-radius: 50%;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

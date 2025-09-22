@@ -1,0 +1,140 @@
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  background-color: #ffebdd; /* fondo suave */
+
+}
+
+/* ----------- NAVBAR ----------- */
+.navbar{ background:#fff !important; border-bottom:1px solid #9e0d0d; font-family: Arial, Helvetica, sans-serif; font-size: large; }
+.navbar .nav-link{ color:#000 !important; font-weight:500; }
+.navbar .nav-link:hover{ color:#a75151 !important; }
+
+
+
+.btn-delivery {
+  background-color: #8B0000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 8px 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-delivery:hover {
+  background-color: #7a3a3a;
+  color: #fff;
+}
+
+/* ----------- HERO ----------- */
+.hero img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 8px;
+}
+
+/* ----------- SECCIÓN HABLEMOS ----------- */
+.hablemos {
+  text-align: center;
+  padding: 50px 20px 20px;
+}
+
+.hablemos h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.hablemos p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-icon {
+  width: 50%;
+  height: 50px;
+  margin-bottom: 15px;
+  display: block;
+   
+}
+
+/* ----------- CARDS CONTACTO ----------- */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ffe8db; /* Color de fondo de la sección */
+  border-radius: 8px;
+}
+.cards .card {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* espacio entre la imagen y el texto */
+  background-color: transparent; /* no usar color de fondo */
+  border: none;
+  width: 100%;
+}
+
+.cards img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.cards h5 {
+  font-weight: 600;
+  color: #8b1d1d; /* color rojo similar al de la imagen */
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+.cards p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444444;
+  line-height: 1.4;
+}
+
+
+/* ----------- FOOTER ----------- */
+.footer{ background:#a75151; color:#fff; padding:48px 20px; position: relative; }
+.footer h5{ font-weight:700; margin-bottom:10px; }
+.footer p{ color:#fff; }
+
+.btn-footer{ background:#8b0000; color: #fff; border:none; padding:8px 16px; border-radius:24px; font-weight:700; }
+.btn-footer:hover { background: #fff; color: #a75151; }
+.social-btn {
+  position: absolute;
+  bottom: 80px;  /* separación desde abajo */
+  right: 500px;   /* separación desde la derecha */
+}
+
+.social-btn img {
+  width: 65px;       /* tamaño más pequeño */
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.social-btn img:hover {
+  transform: scale(1.2);
+}
+
